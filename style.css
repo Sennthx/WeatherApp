@@ -1,0 +1,156 @@
+/* CSS-reset Start */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* CSS-reset END */
+
+:root {
+  font-size: 0.5vw;
+  padding: 0;
+
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar START*/
+aside {
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    border-right: 0.25rem rgb(53, 53, 53) solid;
+}
+#sidebar-body {
+  padding: 2rem;
+  height: 90vh;
+}
+#sidebar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  height: 10vh;
+}
+.input-field {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input {
+  border: black 0.2rem solid;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  height: 4.5rem;
+}
+#location-btn {
+  width: 100%;
+  font-size: 2.3rem;
+  margin-top: 1rem;
+  padding: 1vh;
+  border-radius: 0.75rem;
+  border: black 0.2rem solid;
+}
+.error {
+  margin-top: 2rem;
+  border: rgb(255, 0, 0, 0.5) solid 0.2rem;
+  border-radius: 0.75rem;
+  background-color: rgb(255, 0, 0, 0.2);
+  padding: 1.5rem;
+  font-size: 2rem;
+  display: none;
+}
+/* Sidebar END*/
+
+/* Main Start */
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+.content {
+  height: 70vh;
+  width: 50vw;
+  background-color: rgb(53, 53, 53);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+#location-name {
+  font-size: 5rem;
+}
+#description {
+  font-size: 4.5rem;
+}
+#temperature {
+  font-size: 3.8rem;
+}
+.list {
+  list-style: none;
+}
+/* Main END */
+
+
+
