@@ -55,8 +55,6 @@ select {
 
 :root {
   font-size: 0.5vw;
-  padding: 0;
-
 }
 
 body {
@@ -138,18 +136,37 @@ main {
   flex-direction: column;
   color: white;
 }
+
 #location-name {
   font-size: 5rem;
+  padding-bottom: 1rem;
 }
 #description {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
 }
 #temperature {
-  font-size: 3.8rem;
+  padding-bottom: 1rem;
+  font-size: 4rem;
 }
 .list {
   list-style: none;
+  width: 80%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
+.list-item {
+  border-bottom: 0.1rem solid rgb(53, 53, 53);
+  padding: 1rem;
+}
+li.list-item:last-of-type{
+  border-bottom: none;
+}
+
 /* Main END */
 
 
