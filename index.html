@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <aside>
+        <div id="sidebar-title">Weather App</div>
+        <section id="sidebar-body">
+            <form id="sidebar-form">
+                <div class="input-field">
+                    <label for="city-input">City</label>
+                    <input type="text" id="city-input" placeholder="Add a city...">
+                </div>
+                <div class="input-field">
+                    <label for="country-input">Country</label>
+                    <input type="text" id="country-input" placeholder="Add a Country...">
+                </div>
+                <button type="submit" id="location-btn">Change Location</button>
+            </form>
+            <div class="error"></div>
+        </section>
+    </aside>
+    <main>
+        <div class="content">
+            <div id="location-name"></div>
+            <div id="description"></div>
+            <div id="temperature"></div>
+            <img id="icon">
+            <ul class="list" id="details">
+                <li class="list-item" id="humidity"></li>
+                <li class="list-item" id="dew-point"></li>
+                <li class="list-item" id="feels-like"></li>
+                <li class="list-item" id="wind"></li>
+            </ul>
+        </div>
+    </main>
+    <script src="/scripts/localStorage.js"></script>
+    <script src="/scripts/openweathermap.js"></script>
+    <script src="/scripts/ui.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
