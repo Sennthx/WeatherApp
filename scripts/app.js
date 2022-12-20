@@ -15,7 +15,16 @@ document.querySelector("#sidebar-form").addEventListener("submit", (e) => {
     }
     else {
         // Get weather data
-        ui.resetForm();
+        openWeather.getWeather(city, country)
+        .then(data => {
+            if(data === -1) {
+                ui.showError("The city or country name is incorrect!");
+            }
+            else {
+                ui.showWeatherData(data.weatherData);
+            }
+        });
+        //ui.resetForm();
     }
 
     e.preventDefault();
