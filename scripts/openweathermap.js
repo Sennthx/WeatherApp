@@ -6,7 +6,7 @@ class OpenWeatherMap {
         const geoData = await geoResponse.json();
         
         // Making request to get weather data with geo location
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${geoData[0].lat}&lon=${geoData[0].lon}&units=metric&appid=${process.env.OPENWEATHERMAP_API_KEY}`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${geoData[0].lat}&lon=${geoData[0].lon}&units=metric& appid=${process.env.OPENWEATHERMAP_API_KEY}`);
         const weatherData = await response.json();
         
         return {
